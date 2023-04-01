@@ -1,0 +1,233 @@
+.wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  background-image: url(../../backgrounds/mainBg.jpg);
+  background-position-y: -600px;
+  background-position-x: 100px;
+
+  .container {
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .videoRow {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      height: 116px;
+
+      .videoDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+
+        .videoClick {
+          width: 100%;
+          height: 100%;
+          z-index: 99999;
+          border-radius: 100px;
+        }
+
+        .video {
+          width: 150px;
+          height: 150px;
+          border-radius: 1000px;
+          position: relative;
+          background-color: #2e2e2e;
+          border: 8px solid #2e2e2e;
+          object-fit: cover;
+          object-position: -60px 0px;
+        }
+      }
+    }
+  }
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    min-width: 1200px;
+    min-height: 50px;
+    background-color: #2e2e2e;
+    color: #e1e1e1;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+
+    .controlsLeft {
+      margin-left: 30px;
+      display: flex;
+      justify-self: flex-start;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  .controlsPage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .leftBtn {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .rightBtn {
+      margin-left: 10px;
+      rotate: 180deg;
+      cursor: pointer;
+    }
+  }
+  .controlsRight {
+    margin-right: 20px;
+    display: flex;
+    justify-self: flex-end;
+    align-items: center;
+
+    .controlsSpeed {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-right: 20px;
+      width: 70px;
+      cursor: pointer;
+
+      .modalControlSpeed {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 40px;
+        height: 100px;
+
+        .columnChoose {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: 100%;
+
+          .choose {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 25px;
+            background-color: #2e2e2e;
+          }
+
+          .choose:hover {
+            background-color: #e1e1e1;
+            color: #2e2e2e;
+          }
+        }
+      }
+    }
+
+    .controlsFullscreen {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (max-height: 338px) {
+  .controls {
+    height: 15%;
+  }
+  .video {
+    border: 4px solid black;
+  }
+}
+
+.wrapperMobile {
+  width: 100%;
+  height: 100vh;
+  background-color: #d9d9d9;
+}
+
+.containerMobile {
+  width: 96%;
+  height: 96%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slidesMobile {
+  justify-self: flex-start;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  height: 30px;
+  margin-top: 1%;
+}
+
+.slideMobile {
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 1000px;
+  min-width: 10px;
+  height: 5px;
+  border-radius: 30px;
+  background-color: #bdbdbd;
+}
+
+.slideMobileActive {
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 1000px;
+  min-width: 10px;
+  height: 5px;
+  border-radius: 30px;
+  background-color: #2e2e2e;
+}
+
+.bottomNavigationMobile {
+  justify-self: flex-end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  height: 20%;
+}
+
+.setSpeedMobileContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  color: #2e2e2e;
+}
+.setSpeedMobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+}
+
+.videoMobileContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.videoMobileF {
+  width: 12vh;
+  height: 12vh;
+  border-radius: 100px;
+  border: 8px solid #2e2e2e;
+}
